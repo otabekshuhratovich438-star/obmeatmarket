@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otash Qassob - Sifatli Go'sht Mahsulotlari</title>
+    <style>
+        /* Asosiy uslublar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9f8;
+            color: #250d0d;
+        }
+
+        /* Header qismi */
+        header {
+            background-color: #6b4242;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 26px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-btn {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #e6b800;
+        }
+
+        /* Banner qismi */
+        .banner {
+            background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('banner.jpg') no-repeat center top/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 30px;
+        }
+
+        .banner h2 {
+            text-align: right;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .banner p {
+            text-align: right;
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #5eff00;
+        }
+
+        /* Mahsulotlar konteyneri */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #0fb300;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Mahsulot kartochkasi */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .price {
+            color: #b30000;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .order-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0f0408;
+            transform: color: info(0.95);
+            transition: 0.25;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            list-style; none;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .order-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Footer qismi */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🥩 Otash Qassob</h1>
+        <a href="tel:+998906168712" class="contact-btn">📞 Qo'ng'iroq qilish</a>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Har doim yangi va halol go'sht mahsulotlari</h2>
+        <p>To'g'ridan-to'g'ri uyingizga tezkor yetkazib berish xizmati!</p>
+    </div>
+
+    <!-- Mahsulotlar ro'yxati -->
+    <div class="container">
+        <h2 class="section-title">Bizning mahsulotlar</h2>
+        
+        <div class="products-grid">
+            <!-- Mahsulot 1 -->
+            <div class="card">
+                <img src="molgustu_laxm.jpg">
+                <div class="card-content">
+                    <h3>Mol go'shti laxim</h3>
+                    <div class="price">135,000 so'm / kg</div>
+                    <a href="https://t.me/@Otabek07092000?text=Assalomu alaykum!😊OTABEK MEAT MARKET xizmatini tanlaganimdan xursandman Mol go'shtiga Buyurtma bermoqchiman. ❤️"
+class="order-btn" target="_blank">
+    Buyurtma berish
+</a>
+                    <a href="tel:+998906168712" class="order-btn">Buyurtma berish</a>
+
+                </div>
+            </div>
+
+            <!-- Mahsulot 2 -->
+            <div class="card">
+                <img src="quygusti.jpg">
+                <div class="card-content">
+                    <h3>Qo'y go'shti</h3>
+                    <div class="price">180,000 so'm / kg</div>
+                    <a href="https://t.me/@Otabek07092000?text=Assalomu alaykum!😊OTABEK MEAT MARKET xizmatini tanlaganimdan xursandman quy go'shtiga Buyurtma bermoqchiman. ❤️"
+class="order-btn" target="_blank">
+    Buyurtma berish
+</a>
+                </div>
+            </div>
+
+            <!-- Mahsulot 3 -->
+            <div class="card">
+                <img src="qiyma.jpg">
+                <div class="card-content">
+                    <h3>Maxsus Qiyma</h3>
+                    <div class="price">145,000 so'm / kg</div>
+                    <a href="https://t.me/@Otabek07092000?text=Assalomu alaykum!😊OTABEK MEAT MARKET xizmatini tanlaganimdan xursandman.qiymagaga Buyurtma bermoqchiman. ❤️"
+class="order-btn" target="_blank">
+    Buyurtma berish
+</a>
+                </div>
+            </div>
+
+            <!-- Mahsulot 4 -->
+            <div class="card">
+                <img src="qavurga.jpg">
+                <div class="card-content">
+                    <h3>Mol qovurg'asi</h3>
+                    <div class="price">140,000 so'm / kg</div>
+                    <a href="https://t.me/@Otabek07092000?text=Assalomu alaykum!😊OTABEK MEAT MARKET xizmatini tanlaganimdan xursandman mol qavurga Buyurtma bermoqchiman. ❤️"
+class="order-btn" target="_blank">
+    Buyurtma berish
+</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="tovuqgushti.jpg">
+                <div class="card-content">
+                    <h3>Tovuq go'shti</h3>
+                    <div class="price">45,000 so'm / kg</div>
+                    <a href="https://t.me/@Otabek07092000?text=Assalomu alaykum!😊OTABEK MEAT MARKET xizmatini tanlaganimdan xursandman Tovuq go'shtiga Buyurtma bermoqchiman. ❤️"
+class="order-btn" target="_blank">
+    Buyurtma berish
+</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="quyongushti.jpg">
+                <div class="card-content">
+                    <h3>Quyon go'shti</h3>
+                    <div class="price">65,000 so'm / kg</div>
+                    <a href="https://t.me/@Otabek07092000?text=Assalomu alaykum!😊OTABEK MEAT MARKET xizmatini tanlaganimdan xursandman quyon go'shtiga Buyurtma bermoqchiman. ❤️"
+class="order-btn" target="_blank">
+    Buyurtma berish
+</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="molgustu_laxm.jpg">
+                <div class="card-content">
+                    <h3>OSHXONA VA MAROSIMLAR UCHUN</h3>
+                    <div class="price">130 000 so'm/ kg</div>
+                    <a href="tel:+998906168712" class="order-btn">Buyurtma berish</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Otash Qassob. Mukammalik tasodifan yuzaga kelmaydi, u sifatga bo'lgan intilishdan boshlanadi.</p>
+        <p>Murojaat uchun tel: +998 (90) 616-87-12</p>
+    </footer>
+
+</body>
+</html>
